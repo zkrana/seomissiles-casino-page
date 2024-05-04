@@ -489,7 +489,7 @@ section .extra-mt::before {
     width: calc(33.3333% - 20px);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
   .section-wrapper .c-game .game-wrapper .c-game-item img {
     width: 100%;
   }
