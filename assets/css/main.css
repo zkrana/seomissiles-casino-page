@@ -79,6 +79,11 @@ section .extra-mt::before {
   position: absolute;
   left: 0;
 }
+@media screen and (max-width: 767px) {
+  section .extra-mt img {
+    width: 15%;
+  }
+}
 
 .c-hero {
   width: 100%;
@@ -429,7 +434,7 @@ section .extra-mt::before {
 }
 @media screen and (max-width: 420px) {
   .c-hero .c-hero-btn .c-btn-wrapper .arrow-img {
-    right: 70px;
+    right: 57px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -708,7 +713,7 @@ section .extra-mt::before {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding-top: 270px;
-  margin-top: -8px;
+  margin-top: -11px;
 }
 @media screen and (max-width: 991px) {
   .game-changer {
@@ -1124,8 +1129,9 @@ section .extra-mt::before {
   background-image: url(../img/bg/price.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-top: 60px;
+  padding-top: 70px;
   padding-bottom: 400px;
+  margin-top: -2px;
 }
 .pricing-plan .pricing-plan-wrapper {
   margin-top: var(--mt);
@@ -1134,14 +1140,60 @@ section .extra-mt::before {
   flex-wrap: wrap;
   gap: 34px;
 }
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pricing-plan .pricing-plan-wrapper {
+    gap: 0;
+  }
+}
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item {
   width: calc(33.3333% - 22.6666px);
   position: relative;
+}
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item {
+    height: 510px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item {
+    width: calc(33.3333% - 7px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item {
+    min-height: 600px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item {
+    height: 460px;
+    min-height: 460px;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item img {
   width: 102%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item img {
+    width: 105%;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content {
   position: absolute;
@@ -1150,6 +1202,11 @@ section .extra-mt::before {
   width: 98%;
   left: 2px;
   bottom: 0;
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content {
+    padding-right: 4px;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content span {
   display: block;
@@ -1166,6 +1223,33 @@ section .extra-mt::before {
   color: transparent;
   margin-top: 29px;
 }
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content span {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content span {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 28px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content span {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 19px;
+  }
+}
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header {
   display: flex;
   gap: 6px;
@@ -1173,6 +1257,28 @@ section .extra-mt::before {
   align-items: center;
   margin-top: 15px;
   height: 86px;
+}
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header {
+    height: 55px;
+    margin-top: 8%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header {
+    margin-top: 2%;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header {
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header {
+    height: 55px;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-sale span:first-child {
   font-size: 14px;
@@ -1182,6 +1288,11 @@ section .extra-mt::before {
   text-transform: capitalize;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: unset;
+}
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-sale span:first-child {
+    font-size: 10px;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-sale span:last-child {
   font-size: 20px;
@@ -1193,6 +1304,12 @@ section .extra-mt::before {
   margin-top: -5px;
   text-decoration: line-through;
 }
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-sale span:last-child {
+    margin-top: -3px;
+    font-size: 15px;
+  }
+}
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-price span {
   font-size: 56px;
   display: block;
@@ -1202,12 +1319,64 @@ section .extra-mt::before {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: unset;
 }
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-price span {
+    font-size: 42px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .plan-header .on-price span {
+    font-size: 32px;
+    line-height: 29px;
+    margin-top: 3px;
+  }
+}
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul {
   font-size: 16px;
   line-height: 18px;
   margin-left: 30px;
   color: white;
   margin-top: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul {
+    font-size: 10px;
+    line-height: 10px;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul {
+    font-size: 15px;
+    line-height: 17px;
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul {
+    font-size: 13px;
+    line-height: 14px;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 345px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul {
+    font-size: 12px;
+    line-height: 13px;
+    margin-left: 7%;
+    margin-top: 10%;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul li {
   list-style: none;
@@ -1216,11 +1385,22 @@ section .extra-mt::before {
   gap: 20px;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul li {
+    padding-bottom: 4px;
+  }
+}
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul li:before {
   content: url(../img/pricing/basic-svg-icon.svg);
   width: 10px;
   height: 10px;
   margin-top: -15px;
+}
+@media screen and (max-width: 420px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-desc ul li:before {
+    width: 8px;
+    height: 8px;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-btn {
   text-decoration: none;
@@ -1229,12 +1409,34 @@ section .extra-mt::before {
   left: 50%;
   transform: translateX(-48%);
 }
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-btn {
+    bottom: 3px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+  }
+}
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-btn span {
   color: white;
   font-size: 20px;
   line-height: 28px;
   font-weight: 800;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+@media screen and (max-width: 1200px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-btn span {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pricing-plan .pricing-plan-wrapper .pricing-plan-item .price-content .price-btn span {
+    font-size: 11px;
+  }
 }
 .pricing-plan .pricing-plan-wrapper .pricing-plan-item .standard-price-c span {
   background-image: linear-gradient(0deg, #ff70df 0%, #f52fc9 100%);
@@ -1260,6 +1462,52 @@ section .extra-mt::before {
   position: relative;
   margin-top: -580px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper {
+    margin-top: -480px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .portfolio .portfolio-wrapper {
+    margin-top: -520px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .portfolio .portfolio-wrapper img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .portfolio-wrapper .portfolio-mb {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper .portfolio-mb {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-wrapper .portfolio-mb {
+    width: 111%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: -19px;
+    border-radius: 0 12px 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .portfolio .portfolio-wrapper .portfolio-mb {
+    height: 480px;
+  }
+}
 .portfolio .portfolio-wrapper .portfolio-slider-wrapper {
   width: 100%;
   position: absolute;
@@ -1271,6 +1519,27 @@ section .extra-mt::before {
   transform: translateY(-50%);
   padding: 40px;
 }
+@media screen and (max-width: 1200px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper {
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item {
+    width: 100%;
+  }
+}
 .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item:first-child {
   margin-top: -180px;
 }
@@ -1281,15 +1550,62 @@ section .extra-mt::before {
   margin-top: 20px;
   padding: 0 35px;
 }
+@media screen and (max-width: 1200px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item:first-child p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item:first-child p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item:first-child img {
+    width: 60%;
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 auto;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slider-item:first-child img {
+    width: 90%;
+  }
+}
 .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slick {
   position: relative;
   overflow: hidden;
 }
 .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slick img {
+  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slick img {
+    height: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (max-width: 575px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slick img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .portfolio-wrapper .portfolio-slider-wrapper .portfolio-slick {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .portfolio .c-main-cta {
   text-align: center;
@@ -1298,10 +1614,53 @@ section .extra-mt::before {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .portfolio .c-main-cta img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta img {
+    display: none;
+  }
+}
+@media screen and (min-width: 767px) {
+  .portfolio .c-main-cta .cta-mb-svg {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta .cta-mb-svg {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .c-main-cta .cta-mb-svg {
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 12px;
+  }
+}
 .portfolio .c-main-cta .c-cta-content {
   position: absolute;
   top: 50%;
   transform: translateY(-27%);
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta .c-cta-content {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .portfolio .c-main-cta .c-cta-content {
+    padding: 0 15px;
+  }
 }
 .portfolio .c-main-cta .c-cta-content h3 {
   font-size: 30px;
@@ -1310,14 +1669,49 @@ section .extra-mt::before {
   color: rgba(251, 251, 60, 0.98);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
 }
+@media screen and (max-width: 575px) {
+  .portfolio .c-main-cta .c-cta-content h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 .portfolio .c-main-cta .c-cta-content p {
   font-size: 20px;
   line-height: 24px;
   color: white;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 575px) {
+  .portfolio .c-main-cta .c-cta-content p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
 .portfolio .c-main-cta .c-cta-content .cta {
   margin-top: 25px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta .c-cta-content .cta {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta .c-cta-content .cta a {
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta .c-cta-content .cta a span {
+    font-size: 16px;
+  }
+}
+.portfolio .c-main-cta .c-cta-content .cta a img {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .portfolio .c-main-cta .c-cta-content .cta a img {
+    width: 100%;
+  }
 }
 
 .slick-slide {
