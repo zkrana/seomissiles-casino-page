@@ -85,9 +85,13 @@ section .extra-mt::before {
   }
 }
 
+.header-wrapper {
+  height: 82.5px;
+}
+
 .c-hero {
   width: 100%;
-  height: 100dvh;
+  height: calc(100dvh - 82.5px);
   background-image: url(../img/bg/hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
